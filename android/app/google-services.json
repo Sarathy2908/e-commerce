@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "938749401597",
+    "firebase_url": "https://commonlogin-23a05-default-rtdb.firebaseio.com",
+    "project_id": "commonlogin-23a05",
+    "storage_bucket": "commonlogin-23a05.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:938749401597:android:7657b30bd5e3ed5c472194",
+        "android_client_info": {
+          "package_name": "com.example.ecommerce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "938749401597-a3qc95i2uqn3bujkqfuqci1g2p8eth48.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOWdMP6n1Oen8Al1aB89KudWEfOTv83uo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "938749401597-a3qc95i2uqn3bujkqfuqci1g2p8eth48.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "938749401597-3f300dk3m9mnk38lpnqi9rh1gmp7aja3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.chatgpt"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
