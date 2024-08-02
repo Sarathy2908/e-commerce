@@ -51,9 +51,11 @@ class _LogInState extends State<LogIn> {
     return Scaffold(
         backgroundColor: Colors.white,
         body: SingleChildScrollView(
+          // ignore: avoid_unnecessary_containers
           child: Container(
             child: Column(
               children: [
+                // ignore: sized_box_for_whitespace
                 Container(
                     width: MediaQuery.of(context).size.width,
                     child: Image.asset(
@@ -168,7 +170,7 @@ class _LogInState extends State<LogIn> {
                   height: 40.0,
                 ),
                 Text(
-                  "or LogIn with",
+                  "or Login with",
                   style: TextStyle(
                       color: Color(0xFF273671),
                       fontSize: 22.0,

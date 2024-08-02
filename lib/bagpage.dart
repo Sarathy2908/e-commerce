@@ -25,7 +25,7 @@ class _BagPageState extends State<BagPage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('My Bag'),
+        title: const Text('My Bag'),
         centerTitle: true,
       ),
       body: SingleChildScrollView(
@@ -52,8 +52,8 @@ class _BagPageState extends State<BagPage> {
               'assets/images/product1.png',
               '43\$',
             ),
-            Padding(
-              padding: const EdgeInsets.all(16.0),
+            const Padding(
+              padding: EdgeInsets.all(16.0),
               child: TextField(
                 decoration: InputDecoration(
                   labelText: 'Enter your promo code',
@@ -62,8 +62,8 @@ class _BagPageState extends State<BagPage> {
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(16.0),
+            const Padding(
+              padding: EdgeInsets.all(16.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -86,7 +86,7 @@ class _BagPageState extends State<BagPage> {
                   backgroundColor: Colors.red,
                   minimumSize: Size(screenWidth, 50),
                 ),
-                child: Text(
+                child: const Text(
                   'CHECK OUT',
                   style: TextStyle(color: Colors.white),
                 ),
@@ -105,7 +105,7 @@ class _BagPageState extends State<BagPage> {
                     MaterialPageRoute(
                         builder: (BuildContext context) => FashionSalePage()));
               },
-              child: Icon(Icons.home),
+              child: const Icon(Icons.home),
             ),
             label: 'Home',
           ),
@@ -117,7 +117,7 @@ class _BagPageState extends State<BagPage> {
                     MaterialPageRoute(
                         builder: (BuildContext context) => ShopPage()));
               },
-              child: Icon(Icons.shop),
+              child: const Icon(Icons.shop),
             ),
             label: 'Shop',
           ),
@@ -129,7 +129,7 @@ class _BagPageState extends State<BagPage> {
                     MaterialPageRoute(
                         builder: (BuildContext context) => ProfilePage()));
               },
-              child: Icon(Icons.shopping_bag),
+              child: const Icon(Icons.shopping_bag),
             ),
             label: 'Bag',
           ),
@@ -141,7 +141,7 @@ class _BagPageState extends State<BagPage> {
                     MaterialPageRoute(
                         builder: (BuildContext context) => FavoritesPage()));
               },
-              child: Icon(Icons.favorite),
+              child: const Icon(Icons.favorite),
             ),
             label: 'Favorites',
           ),
@@ -153,7 +153,7 @@ class _BagPageState extends State<BagPage> {
                     MaterialPageRoute(
                         builder: (BuildContext context) => ProfilePage()));
               },
-              child: Icon(Icons.person),
+              child: const Icon(Icons.person),
             ),
             label: 'Profile',
           ),
@@ -183,7 +183,7 @@ class _BagPageState extends State<BagPage> {
           BoxShadow(
             color: Colors.grey.withOpacity(0.5),
             blurRadius: 4,
-            offset: Offset(0, 2), // Shadow position
+            offset: const Offset(0, 2), // Shadow position
           ),
         ],
       ),
@@ -195,24 +195,24 @@ class _BagPageState extends State<BagPage> {
             height: 80,
             fit: BoxFit.cover,
           ),
-          SizedBox(width: 16),
+          const SizedBox(width: 16),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   title,
-                  style: TextStyle(fontSize: 18),
+                  style: const TextStyle(fontSize: 18),
                 ),
-                SizedBox(height: 4),
+                const SizedBox(height: 4),
                 Text(
                   subtitle1,
-                  style: TextStyle(color: Colors.grey),
+                  style: const TextStyle(color: Colors.grey),
                 ),
-                SizedBox(height: 4),
+                const SizedBox(height: 4),
                 Text(
                   subtitle2,
-                  style: TextStyle(color: Colors.grey),
+                  style: const TextStyle(color: Colors.grey),
                 ),
               ],
             ),
@@ -223,12 +223,12 @@ class _BagPageState extends State<BagPage> {
               Row(
                 children: [
                   IconButton(
-                    icon: Icon(Icons.remove),
+                    icon: const Icon(Icons.remove),
                     onPressed: () {},
                   ),
-                  Text('1'),
+                  const Text('1'),
                   IconButton(
-                    icon: Icon(Icons.add),
+                    icon: const Icon(Icons.add),
                     onPressed: () {},
                   ),
                 ],

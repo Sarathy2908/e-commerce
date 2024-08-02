@@ -30,8 +30,8 @@ class _FashionSalePageState extends State<FashionSalePage> {
             Container(
               height: screenHeight * 0.6,
               width: screenWidth,
-              decoration: BoxDecoration(
-                image: DecorationImage(
+              decoration: const BoxDecoration(
+                image: const DecorationImage(
                   image: AssetImage('assets/images/fashion_page.png'),
                   fit: BoxFit.cover,
                 ),
@@ -44,7 +44,7 @@ class _FashionSalePageState extends State<FashionSalePage> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
+                        const Text(
                           'Fashion sale',
                           style: TextStyle(
                             color: Colors.white,
@@ -52,13 +52,13 @@ class _FashionSalePageState extends State<FashionSalePage> {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        SizedBox(height: 10),
+                        const SizedBox(height: 10),
                         ElevatedButton(
                           onPressed: () {},
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.red,
                           ),
-                          child: Text(
+                          child: const Text(
                             'Check',
                             style: TextStyle(color: Colors.white),
                           ),
@@ -74,7 +74,7 @@ class _FashionSalePageState extends State<FashionSalePage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
+                  const Text(
                     'New',
                     style: TextStyle(
                       fontSize: 24,
@@ -83,7 +83,7 @@ class _FashionSalePageState extends State<FashionSalePage> {
                   ),
                   TextButton(
                     onPressed: () {},
-                    child: Text('View all'),
+                    child: const Text('View all'),
                   ),
                 ],
               ),
@@ -91,7 +91,7 @@ class _FashionSalePageState extends State<FashionSalePage> {
             GridView.count(
               crossAxisCount: 2,
               shrinkWrap: true,
-              physics: NeverScrollableScrollPhysics(),
+              physics: const NeverScrollableScrollPhysics(),
               children: [
                 _buildProductCard(context, 'assets/images/product1.png'),
                 _buildProductCard(context, 'assets/images/product2.png'),
@@ -112,7 +112,7 @@ class _FashionSalePageState extends State<FashionSalePage> {
                     MaterialPageRoute(
                         builder: (BuildContext context) => FashionSalePage()));
               },
-              child: Icon(Icons.home),
+              child: const Icon(Icons.home),
             ),
             label: 'Home',
           ),
@@ -124,7 +124,7 @@ class _FashionSalePageState extends State<FashionSalePage> {
                     MaterialPageRoute(
                         builder: (BuildContext context) => ShopPage()));
               },
-              child: Icon(Icons.shop),
+              child: const Icon(Icons.shop),
             ),
             label: 'Shop',
           ),
@@ -136,7 +136,7 @@ class _FashionSalePageState extends State<FashionSalePage> {
                     MaterialPageRoute(
                         builder: (BuildContext context) => BagPage()));
               },
-              child: Icon(Icons.shopping_bag),
+              child: const Icon(Icons.shopping_bag),
             ),
             label: 'Bag',
           ),
@@ -148,7 +148,7 @@ class _FashionSalePageState extends State<FashionSalePage> {
                     MaterialPageRoute(
                         builder: (BuildContext context) => FavoritesPage()));
               },
-              child: Icon(Icons.favorite),
+              child: const Icon(Icons.favorite),
             ),
             label: 'Favorites',
           ),
@@ -160,7 +160,7 @@ class _FashionSalePageState extends State<FashionSalePage> {
                     MaterialPageRoute(
                         builder: (BuildContext context) => ProfilePage()));
               },
-              child: Icon(Icons.person),
+              child: const Icon(Icons.person),
             ),
             label: 'Profile',
           ),
@@ -179,7 +179,7 @@ class _FashionSalePageState extends State<FashionSalePage> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           ClipRRect(
-            borderRadius: BorderRadius.only(
+            borderRadius: const BorderRadius.only(
               topLeft: Radius.circular(8.0),
               topRight: Radius.circular(8.0),
             ),

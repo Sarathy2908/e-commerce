@@ -36,7 +36,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Favorites'),
+        title: const Text('Favorites'),
         centerTitle: true,
       ),
       body: SingleChildScrollView(
@@ -48,27 +48,27 @@ class _FavoritesPageState extends State<FavoritesPage> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   FilterChip(
-                    label: Text('Summer'),
+                    label: const Text('Summer'),
                     onSelected: (bool value) {},
                   ),
-                  SizedBox(width: 8),
+                  const SizedBox(width: 8),
                   FilterChip(
-                    label: Text('Summer'),
+                    label: const Text('Summer'),
                     onSelected: (bool value) {},
                   ),
-                  SizedBox(width: 8),
+                  const SizedBox(width: 8),
                   FilterChip(
-                    label: Text('Summer'),
+                    label: const Text('Summer'),
                     onSelected: (bool value) {},
                   ),
-                  SizedBox(width: 8),
+                  const SizedBox(width: 8),
                   FilterChip(
-                    label: Text('T-Shirts'),
+                    label: const Text('T-Shirts'),
                     onSelected: (bool value) {},
                   ),
-                  SizedBox(width: 8),
+                  const SizedBox(width: 8),
                   FilterChip(
-                    label: Text('Shirts'),
+                    label: const Text('Shirts'),
                     onSelected: (bool value) {},
                   ),
                 ],
@@ -77,15 +77,15 @@ class _FavoritesPageState extends State<FavoritesPage> {
             Row(
               children: [
                 IconButton(
-                  icon: Icon(Icons.filter_list),
+                  icon: const Icon(Icons.filter_list),
                   onPressed: () {},
                 ),
                 IconButton(
-                  icon: Icon(Icons.sort),
+                  icon: const Icon(Icons.sort),
                   onPressed: () {},
                 ),
                 IconButton(
-                  icon: Icon(Icons.view_list),
+                  icon: const Icon(Icons.view_list),
                   onPressed: () {},
                 ),
               ],
@@ -101,7 +101,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
                     MaterialPageRoute(
                         builder: (BuildContext context) => FashionSalePage()));
               },
-              child: Icon(Icons.home),
+              child: const Icon(Icons.home),
             ),
             label: 'Home',
           ),
@@ -113,7 +113,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
                     MaterialPageRoute(
                         builder: (BuildContext context) => ShopPage()));
               },
-              child: Icon(Icons.shop),
+              child: const Icon(Icons.shop),
             ),
             label: 'Shop',
           ),
@@ -125,7 +125,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
                     MaterialPageRoute(
                         builder: (BuildContext context) => BagPage()));
               },
-              child: Icon(Icons.shopping_bag),
+              child: const Icon(Icons.shopping_bag),
             ),
             label: 'Bag',
           ),
@@ -137,7 +137,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
                     MaterialPageRoute(
                         builder: (BuildContext context) => FavoritesPage()));
               },
-              child: Icon(Icons.favorite),
+              child: const Icon(Icons.favorite),
             ),
             label: 'Favorites',
           ),
@@ -149,7 +149,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
                     MaterialPageRoute(
                         builder: (BuildContext context) => ProfilePage()));
               },
-              child: Icon(Icons.person),
+              child: const Icon(Icons.person),
             ),
             label: 'Profile',
           ),
@@ -175,7 +175,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
     bool isNew,
   ) {
     return Card(
-      margin: EdgeInsets.all(8),
+      margin: const EdgeInsets.all(8),
       child: ListTile(
         leading:
             Image.asset(imagePath, fit: BoxFit.cover, width: 60, height: 60),
@@ -186,11 +186,11 @@ class _FavoritesPageState extends State<FavoritesPage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(brand),
-                Text(title, style: TextStyle(fontWeight: FontWeight.bold)),
+                Text(title, style: const TextStyle(fontWeight: FontWeight.bold)),
                 Row(
                   children: [
                     Text('Color: $color  Size: $size'),
-                    Spacer(),
+                    const Spacer(),
                     Text('\$$price'),
                   ],
                 ),
@@ -200,25 +200,25 @@ class _FavoritesPageState extends State<FavoritesPage> {
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 IconButton(
-                  icon: Icon(Icons.remove_circle, color: Colors.red),
+                  icon: const Icon(Icons.remove_circle, color: Colors.red),
                   onPressed: () {
                     // Handle remove from favorites
                   },
                 ),
                 Row(
                   children: [
-                    Icon(Icons.star, color: Colors.yellow, size: 16),
+                    const Icon(Icons.star, color: Colors.yellow, size: 16),
                     Text('$rating ($reviewCount)'),
                   ],
                 ),
                 if (isNew)
                   Container(
-                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                     decoration: BoxDecoration(
                       color: Colors.red,
                       borderRadius: BorderRadius.circular(12),
                     ),
-                    child: Text('NEW', style: TextStyle(color: Colors.white)),
+                    child: const Text('NEW', style: TextStyle(color: Colors.white)),
                   ),
               ],
             ),

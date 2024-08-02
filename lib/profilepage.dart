@@ -25,13 +25,13 @@ class _ProfilePageState extends State<ProfilePage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('My profile'),
+        title: const Text('My profile'),
         centerTitle: true,
       ),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            ListTile(
+            const ListTile(
               leading: CircleAvatar(
                 radius: 30,
                 backgroundImage: AssetImage(
@@ -59,7 +59,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     MaterialPageRoute(
                         builder: (BuildContext context) => FashionSalePage()));
               },
-              child: Icon(Icons.home),
+              child: const Icon(Icons.home),
             ),
             label: 'Home',
           ),
@@ -71,7 +71,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     MaterialPageRoute(
                         builder: (BuildContext context) => ShopPage()));
               },
-              child: Icon(Icons.shop),
+              child: const Icon(Icons.shop),
             ),
             label: 'Shop',
           ),
@@ -83,7 +83,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     MaterialPageRoute(
                         builder: (BuildContext context) => BagPage()));
               },
-              child: Icon(Icons.shopping_bag),
+              child: const Icon(Icons.shopping_bag),
             ),
             label: 'Bag',
           ),
@@ -95,7 +95,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     MaterialPageRoute(
                         builder: (BuildContext context) => FavoritesPage()));
               },
-              child: Icon(Icons.favorite),
+              child: const Icon(Icons.favorite),
             ),
             label: 'Favorites',
           ),
@@ -107,7 +107,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     MaterialPageRoute(
                         builder: (BuildContext context) => ProfilePage()));
               },
-              child: Icon(Icons.person),
+              child: const Icon(Icons.person),
             ),
             label: 'Profile',
           ),
@@ -124,9 +124,9 @@ class _ProfilePageState extends State<ProfilePage> {
     return ListTile(
       title: Text(title),
       subtitle: Text(subtitle),
-      trailing: Icon(Icons.arrow_forward_ios),
+      trailing: const Icon(Icons.arrow_forward_ios),
       onTap: () {
-        // Handle option tap
+     
       },
     );
   }
